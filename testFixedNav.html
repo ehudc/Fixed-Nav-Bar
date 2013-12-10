@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="fixedNav.js"></script>
+
+<script>
+$(document).ready(function () {
+    $("#navbar").fix({
+        parentDiv: "#header",
+        center: true
+    });
+});
+</script>
+  
+<style>
+body {
+    height: 2000px;
+}
+#topHeader {
+    text-align: left;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 18px;
+}
+#header {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+#navbar {
+    margin: 40px auto;
+    padding: 10px;
+    background: #bbb;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width:75%;
+}
+</style>  
+
+</head>
+<body>
+<title>Test Fixed Navigation Bar</title>
+<!-- <div id="topHeader"> This is a "Grandparent" test div, parent of the header div. -->
+<div id="header">This is the header div, the parent of the navigation bar div.
+<div id="navbar">
+    <p>This is the fixed navigation bar, links would go here.</p>
+</div>
+</div>
+<!-- </div> -->
+<p>This is a paragraph on the website below the header/navigation bar.</p>
+<p>This is another paragraph.</p>
+<p>This is one final example paragraph.</p>
+</body>
+</html>
