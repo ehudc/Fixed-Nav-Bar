@@ -1,12 +1,10 @@
 ## Fixed Navigation Bar
----------
 
 A jQuery plugin to fix an element to the top of the browser window when scrolling down the page.
 
 Though primarily designed for use with those sites that have a header and a navigation bar, it can also be used for any child div element as long as you specify a parent div.
 
 ### Using fixedNav.js
----------
 
 In your `<head>` include a version of jQuery above 1.7 (so that .on() can be utilized), as well as the location of `fixedNav.js`.
 
